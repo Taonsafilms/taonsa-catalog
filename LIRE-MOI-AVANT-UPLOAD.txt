@@ -1,0 +1,36 @@
+=============================================================
+TAONSA — Bundle catalog pour GitHub Pages
+=============================================================
+
+CE QUE TU VAS FAIRE (5 min) :
+
+1. Aller sur github.com/new -> creer un repo PUBLIC nomme "taonsa-catalog"
+   (coche "Add a README file")
+
+2. Dans le repo : "Add file" > "Upload files"
+   -> Drag-drop TOUT le contenu de ce ZIP (xml, csv, tsv, .github/, README.md)
+   -> Tout en bas : "Commit changes"
+
+3. Dans le repo : Settings > Pages
+   -> Source : "Deploy from a branch"
+   -> Branch : "main" / "(root)"
+   -> Save
+   -> Attendre 1-2 min
+
+4. L'URL finale du catalog sera :
+   https://<TON-USERNAME>.github.io/taonsa-catalog/facebook-feed.xml
+
+5. Dans Meta Commerce Manager :
+   - Aller sur ta source de donnees existante "Catalog_Products"
+   - Onglet "Parametres" -> Modifier l'URL
+   - Coller la nouvelle URL github.io
+   - Sauvegarder
+
+6. Cliquer "Importer a nouveau le fichier de donnees" -> 88 produits importes en 30 sec.
+
+BONUS : le workflow .github/workflows/sync-feed.yml va automatiquement
+re-telecharger le catalog depuis taonsa.com toutes les heures et le
+republier sur GitHub Pages. Tu n'as plus rien a faire.
+
+POUR EN SAVOIR PLUS : voir README.md
+=============================================================
